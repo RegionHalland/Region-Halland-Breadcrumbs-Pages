@@ -7,27 +7,26 @@
 	/*
 	Plugin Name: Region Halland Breadcrumbs Pages
 	Description: Front-end-plugin för breadcrumbs (bara för sidor)
-	Version: 1.0.0
+	Version: 1.0.1
 	Author: Roland Hydén
 	License: Free to use
 	Text Domain: regionhalland
 	*/
 
 	// Returnera en array med breadcrumbs-info
-	function get_region_halland_breadcrumbs_pages()
-	{
+	function get_region_halland_breadcrumbs_pages() {
 		
 		// Wordpress funktion för aktuell post
 		global $post;
 		
 		// Titel för aktuell sida
-		$title 			= $post->post_title;
+		$title = $post->post_title;
 		
 		// Lägg till första posten i arrayen med breadcrumbs
-		$breadcrumbs 	= addRegionHallandBreadcrumbsPages(array(), get_bloginfo('name'), get_home_url());
+		$breadcrumbs = addRegionHallandBreadcrumbsPages(array(), get_bloginfo('name'), get_home_url());
 		
 		// Hämta ID för alla "föräldrar" till aktuell sida
-		$ancestors 		= array_reverse(get_post_ancestors($post->ID));
+		$ancestors = array_reverse(get_post_ancestors($post->ID));
 
 		// Loopa igenom alla "föräldrar"
 		foreach ($ancestors as $ancestor) {

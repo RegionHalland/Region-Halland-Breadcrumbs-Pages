@@ -40,11 +40,11 @@ Repositories = var pluginen är lagrad, i detta fall på github
   },
 ],
 ```
-Require = anger vilken version av pluginen du vill använda, i detta fall version 1.0.0 
+Require = anger vilken version av pluginen du vill använda, i detta fall version 1.0.1
 
 ```sh
 "require": {
-  "regionhalland/region-halland-breadcrumbs-pages": "1.0.0"
+  "regionhalland/region-halland-breadcrumbs-pages": "1.0.1"
 },
 ```
 
@@ -85,3 +85,10 @@ array (size=3)
       'url' => boolean false
 ```
 
+## Versionhistorik
+
+### 1.0.1
+- Linting, dvs ersatt tab med mellanslag
+
+### 1.0.0
+- Första version
