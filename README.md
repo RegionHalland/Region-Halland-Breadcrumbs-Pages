@@ -89,6 +89,9 @@ array (size=3)
 
 ## Versionhistorik
 
+### 1.1.1
+- Uppdaterat versions-data
+
 ### 1.1.0
 - Lagt till composer.json
 
