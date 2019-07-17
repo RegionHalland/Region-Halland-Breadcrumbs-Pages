@@ -7,9 +7,9 @@
 	/*
 	Plugin Name: Region Halland Breadcrumbs Pages
 	Description: Front-end-plugin för breadcrumbs (bara för sidor)
-	Version: 1.1.1
+	Version: 1.2.0
 	Author: Roland Hydén
-	License: MIT
+	License: GPL-3.0
 	Text Domain: regionhalland
 	*/
 
